@@ -8,16 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>carbon-coyote-new</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden ">
     <nav class="bg-black border-b border-gray-500">
-      <div>
-        <button onclick="toggleMenu(true)" class="absolute sm:block md:block lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 bg-white">
+      <div class="">
+        <button onclick="toggleMenu(true)" class="sm:block md:block lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 bg-white ">
           
             <img class="h-8 w-8" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg4.svg" alt="show"/>
            
         </button>
         <div id="menu" class=" lg:block hidden">
-            <button onclick="toggleMenu(false)" class="relative block lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 bg-white md:bg-white z-30 top-0">
+            <button onclick="toggleMenu(false)" class="top-0 absolute  block lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 bg-white md:bg-white z-30 ">
                 <img class="h-8 w-8" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg5.svg" alt="hide"/>
                
             </button>
@@ -48,33 +48,36 @@
       </div>
       </div>
     </nav>
-    <div class="w-full bg-black">
-      <div class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row pt-2  lg:pt-24 xl:pt-24 2xl:pt-24 pb-36">
-        <div class="flex-none mt-36 hidden lg:block xl:block 2xl:block">
+      <div class="relative bg-black lg:pb-20 md:pb-8 pb-0 overflow-hidden sm:px-0 px-10 w-full">
+        <div class="flex gap-12 pt-12 justify-center text-center flex-col items-center bg-black">
           <img
-            class="animate-flicker mx-auto " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%202.png"
+            src="
+               https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201786.png"
+            width="400"
+            height="571"
+            class="mx-auto  object-fit cursor-pointer"
           />
-        </div>
-        <div class="grow mx-auto px-5 lg:px-0 xl:px-0 2xl:px-0  ">
-          <img
-            class="mt-12 mb-12 mx-auto mt-12"
-            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%202.png"
-          />
-          <div class=" ">
-            <img
-              class="mx-auto"
-              src=" https://tuk-cdn.s3.amazonaws.com/can-uploader/CARBON%20COYOTE%201.png"
-            />
-          </div>
-          <div class="text-2xl lg:4xl xl:text-4xl 2xl:text-7xl text-gray-50 text-bold text-center mt-12 font-['Ibarra+Real+Nova']">
+          <p class="font-semibold lg:text-5xl text-3xl text-white pt-8 mx-auto font-['Ibarra+Real+Nova']">
             Build Better - Save Planet
-          </div>
+          </p>
         </div>
-        <div class="flex-none  hidden lg:block xl:block 2xl:block mt-36 ">
-          <img
-             class="animate-flicker mx-auto"src=" https://tuk-cdn.s3.amazonaws.com/can-uploader/reseauImple.png"
+        <div class="sm:absolute top-16 hidden lg:block xl:block 2xl:block">
+          <Image
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/reseauImple%20%282%29.png"
+            width={350}
+            height={500}
+            class="animate-flicker"
           />
         </div>
+        <div class="sm:absolute top-16 right-0 hidden lg:block xl:block 2xl:block">
+          <Image
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/reseauImple%20%281%29.png"
+            width={350}
+            height={500}
+            class=" animate-flicker"
+          />
+        </div>
+      </div>
       </div>
       <div class="left overflow-x-hidden"></div>
     </div>
@@ -107,15 +110,19 @@
       <div class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-16 justify-center items-center mt-16 mx-auto">
         <div class="w-11/12">
           <img
-            class="float-left lg:float-right xl:float-right 2xl:float-right"
-            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201773%201.png"
+            class="hidden lg:block xl:block 2xl:block float-right"
+           style="width:296px;height:213px;" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201773%201.png"
+          />
+          <img
+            class="block lg:hidden xl:hidden 2xl:hidden mx-auto"
+           style="width:296px;height:213px;" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201773%201.png"
           />
         </div>
         <div class="w-12/12 px-5 lg:px-0 xl:px-0 2xl:px-0">
           <h4 class="text-3xl font-bold font-['Ibarra+Real+Nova']">
             Net Zero Carbon Homes - Self Builders
           </h4>
-          <h4 class="text-lg mt-5 w-9/12 text-gray-600">
+          <h4 class="text-lg mt-5 w-full lg:w-9/12 xl:w-9/12 2xl:w-9/12 text-gray-600">
             We demystify and simplify the process of building a Net Zero Carbon
             home. It's possible to create a home that is both an amazing space
             to enjoy life and simultaneous looks after the planet. We provide a
@@ -211,7 +218,7 @@
         </div>
         <div class="w-7/12">
           <img
-            class=""
+            class=""style="width:296px;height:230px;"
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201775%201.png"
           />
         </div>
@@ -221,7 +228,7 @@
             <div class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-16 justify-center items-center mt-16 mx-auto">
                 <div class="w-11/12">
                   <img
-                    class=""
+                    class="mx-auto"style="width:296px;height:230px;"
                     src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Group%201775%201.png"
                   />
                 </div>
@@ -229,7 +236,7 @@
                     <h4 class="text-3xl font-bold  font-['Ibarra+Real+Nova']">
                         Net Zero Carbon Homes - Developers
                       </h4>
-                      <div class="text-lg mt-5 w-10/12 text-gray-600 ">
+                      <div class="text-lg mt-5  sm:w-full lg:w-10/12 xl:w-10/12 2xl:w-10/12 text-gray-600 ">
                         <h4>
                           We utilise the most up-to-date methods of Off-Site Manufacturing,
                           Passive House design to ensure your build program is as short and
@@ -280,15 +287,19 @@
       <div class=" flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-16 justify-center items-center mt-24 mx-auto">
         <div class="w-11/12">
           <img
-            class="float-left lg:float-right xl:float-right 2xl:float-right"
+            class="float-right hidden lg:block xl:block 2xl:block"style="width: 293px; height:291px;;"
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%2011.png"
           />
+          <img
+          class="mx-auto block lg:hidden 2xl:hidden xl:hidden"style="width: 293px; height:291px;;"
+          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%2011.png"
+        />
         </div>
         <div class="flex px-5 lg:px-0 xl:px-0 2xl:px-0">
         <div class="">
         <div class="w-12/12">
           <h4 class="text-3xl font-bold font-['Ibarra+Real+Nova']">Carbon Offset Service</h4>
-          <div class="text-lg mt-5 w-9/12 text-gray-600">
+          <div class="text-lg mt-5 w-full lg:w-9/12 xl:w-9/12 2xl:w-9/12 text-gray-600">
             <h4>
               Carbon Coyote has a series of verified offset partners to ensure
               any offset you wish to make that's associated with either your
@@ -384,7 +395,7 @@
     </div>
     <div class="container mx-auto mt-24 mb-12">
       <div class="text-center text-6xl font-bold font-['Ibarra+Real+Nova']">Meet the Visionaries</div>
-      <div class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row place-content-center gap-12 mt-16">
+      <div class="grid grid-col-1 md:grid-cols-2 p-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3  place-content-center gap-12 mt-16">
         <div class="">
           <img class="w-full"
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Hipkiss_CC_Prof_Pic.png"
@@ -510,23 +521,23 @@
     <div class="text-center text-5xl font-bold font-['Ibarra+Real+Nova']">Get in Touch</div>
     <div class="flex flex-col md:flex-row-2 lg:flex-row xl:flex-row 2xl:flex-row place-content-between mt-24">
       <div class="mt-12">
-        <img  class="mx-auto"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/email%20%281%29%201.png">
+        <img  class="mx-auto"style="width:80px;height: 80px;"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/email%20%281%29%201.png">
         <div class="text-center text-xl font-bold mt-6 font-['Ibarra+Real+Nova']">Email Address</div>
         <div class="text-center text-xl text-slate-600 mt-1">CarbonCoyote@gmail.com</div>
 
       </div>
       <div class="mt-12">
-        <img  class="mx-auto"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/phone%201.png">
+        <img  class="mx-auto"style="width:80px;height: 80px;"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/phone%201.png">
         <div class="text-center text-xl font-bold mt-6 font-['Ibarra+Real+Nova']">Phone Number</div>
         <div class="text-center text-xl text-slate-600 mt-1">009-338-390</div>
       </div>
       <div class="mt-12">
-        <img  class="mx-auto"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%204.png">
+        <img  class="mx-auto"style="width:80px;height: 80px;"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%204.png">
         <div class="text-center text-xl font-bold mt-6 font-['Ibarra+Real+Nova']">Our Socials</div>
         <div class="text-center text-xl text-slate-600 mt-1 ">Linkdin.com</div>
       </div>
       <div class="mt-12">
-        <img  class="mx-auto"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%206.png">
+        <img  class="mx-auto"style="width:80px;height: 80px;"src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%206.png">
         <div class="text-center text-xl font-bold mt-6 font-['Ibarra+Real+Nova']">Location</div>
         <div class="text-center text-xl text-slate-600 mt-1">Headquarter address here</div>
       </div>
@@ -534,8 +545,8 @@
     </div>
     <div class="mt-32 pt-12 pb-12 bg"id="section3">
       <div class="mt-24 mb-32 ">
-        <img class="mx-auto" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%203.png">
-        <img class="mx-auto mt-6" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer%20logo%201.png">
+        <img class="mx-auto"style="width:126px;height:195px;" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%203.png">
+        <img class="mx-auto mt-6"style="width:281px;height:28px;" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer%20logo%201.png">
         <div class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row  place-content-center gap-8 lg:gap-16 xl:gap-16 2xl:gap-16 mt-12">
           <div class=" cursor-pointer text-bold text-lg mx-auto lg:mx-0 xl:mx-0 2xl:mx-0 font-['Ibarra+Real+Nova']">HOME</div>
           <div class=" cursor-pointer text-bold text-lg mx-auto mx-auto lg:mx-0 xl:mx-0 2xl:mx-0 font-['Ibarra+Real+Nova']">ABOUT US</div>
